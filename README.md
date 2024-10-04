@@ -13,6 +13,7 @@ npm init
 npm i express @types/express
 npm i nodemon mongoose
 npm i @types/mongoose
+npm i typescript ts-node
 ```
 - step3 configuring Typescript and creating folder structure
 ```bash
@@ -54,3 +55,15 @@ pest this json in `nodemon.json`
     "exec": "ts-node ./src/index.ts"
 }
 ```
+If your not able to do this check `config ts` commit
+
+- step5 let's quickly check everything is working or not
+In src> index.ts add
+```typescript
+console.log("Hello App");
+```
+then open terminal and type
+```
+npm run start
+```
+If all things fine. in console you get the message `Hello App`
